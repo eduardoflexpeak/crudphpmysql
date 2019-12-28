@@ -12,7 +12,7 @@ $contato = new Contato($conexao);
 
 $stmt = $contato->lerTodos();
 
-echo "<h1>Tela contatos</h1>";
+echo "<h1>Tela Contatos Teste</h1>";
 echo "<a class='btn btn-success' href='novocontato.php'>Cadastrar Novo</a><hr>";
 
 echo "<table class='table'>
