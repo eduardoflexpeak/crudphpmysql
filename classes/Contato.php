@@ -68,4 +68,18 @@ class Contato {
         }
     }
 
+    function excluir() {
+ 
+        $query = "DELETE FROM contatos WHERE id = :ID";
+         
+        $stmt = $this->conexao->prepare($query);
+        $stmt->bindParam(":ID", $this->id);
+     
+        if ($stmt->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
