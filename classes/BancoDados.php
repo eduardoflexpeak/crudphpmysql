@@ -10,7 +10,7 @@ class BancoDados {
             $conexao = new PDO(
                 "mysql:host=localhost;dbname=contatos",
                 "root",
-                "root"
+                ""
             );
         } catch (PDOException $erro) {
             echo "Erro na conexao: " . $erro->getMessage();

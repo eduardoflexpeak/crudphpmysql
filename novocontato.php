@@ -16,7 +16,7 @@ if($_POST) {
 
     if($contato->criar()) {
         $_SESSION['mensagem'] = "Contato criado com sucesso";
-        echo "<div class='alert alert-success' role='alert'>Contato criado com sucesso</div>";
+        // echo "<div class='alert alert-success' role='alert'>Contato criado com sucesso</div>";
         header("Location: novocontato.php");
         exit(0);
     } else {
